@@ -11,6 +11,7 @@ $(document).addClass(function () {
         settings: {
           dots: true,
           arrows: false,
+          speed: 1200,
         },
       },
     ],
@@ -46,4 +47,25 @@ $(document).addClass(function () {
 
   toggleSlide('.catalog-item__link')
   toggleSlide('.catalog-item__back')
+
+  // Modal
+
+  $('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn('slow')
+  })
+
+  $('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #order, #thanks').fadeOut('slow')
+  })
+
+  // $('.btn_mini').on('click', function () {
+  //   $('.overlay, #order').fadeIn('slow')
+  // })
+
+  $('.btn_mini').each(function (i) {
+    $(this).on('click', function () {
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text())
+      $('.overlay, #order').fadeIn('slow')
+    })
+  })
 })

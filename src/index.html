@@ -24,7 +24,9 @@
             <a href="tel:+380930060055" class="header__phone"
               >+38 (093) 006-00-55</a
             >
-            <button class="btn">Request a call</button>
+            <button data-modal="consultation" class="btn">
+              Request a call
+            </button>
           </div>
         </header>
         <div class="promo__wrapper">
@@ -48,7 +50,9 @@
             </div>
           </div>
 
-          <button class="btn btn_main">order a consultation</button>
+          <button data-modal="consultation" class="btn btn_main">
+            order a consultation
+          </button>
           <div class="promo__link">
             or
             <a href="#">GO TO CATALOG</a>
@@ -101,14 +105,21 @@
           Just fill out the application <br />
           form and we will call you back within 10 minutes.
         </div>
-        <form class="feed-form" action="#">
-          <input name="name" required placeholder="Your name" type="text" />
-          <input name="tel" required placeholder="Your phone" type="tel" />
-          <input name="email" required placeholder="Your E-mail" type="email" />
+        <div class="consultation__wrapper">
+          <form class="feed-form" action="#">
+            <input name="name" required placeholder="Your name" type="text" />
+            <input name="tel" required placeholder="Your phone" type="tel" />
+            <input
+              name="email"
+              required
+              placeholder="Your E-mail"
+              type="email"
+            />
 
-          <!-- <input type="submit" value="order a consultation" /> -->
-          <button class="btn btn_submit">Order a consultation</button>
-        </form>
+            <!-- <input type="submit" value="order a consultation" /> -->
+            <button class="btn btn_submit">Order a consultation</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -183,7 +194,7 @@
                   class="catalog-item__img"
                 />
                 <div class="catalog-item__subtitle">
-                  Heart rate monitor Polar FT1
+                  Suunto M2 heart rate monitor
                 </div>
                 <div class="catalog-item__descr">
                   For your first steps in heart rate training
@@ -309,7 +320,7 @@
                   class="catalog-item__img"
                 />
                 <div class="catalog-item__subtitle">
-                  Heart rate monitor Polar FT1
+                  Suunto M2 heart rate monitor
                 </div>
                 <div class="catalog-item__descr">
                   For your first steps in heart rate training
@@ -351,7 +362,7 @@
                   class="catalog-item__img"
                 />
                 <div class="catalog-item__subtitle">
-                  Heart rate monitor Polar FT1
+                  Heart rate monitor Polar FT4
                 </div>
                 <div class="catalog-item__descr">
                   For your first steps in heart rate training
@@ -517,6 +528,127 @@
         </div>
       </div>
     </section>
+    <section class="feed">
+      <div class="container">
+        <h2 class="title">Customer Reviews</h2>
+
+        <div class="feed__item">
+          <img src="img/feed_1.png" alt="Irina Ivanchenko" class="feed__img" />
+          <div class="feed__text">
+            <div class="feed__subtitle">Irina Ivanchenko</div>
+            <div class="feed__count">2 half marathons</div>
+            <div class="feed__descr">
+              I didn’t know what to buy for myself, so I turned to the guys from
+              RunSmart - they selected a heart rate monitor that suited my goals
+              and financial capabilities. After some time, I decided to update
+              the gadget - without hesitation I went there.
+              <br /><br />
+              New goals - new gadget!
+              <br /><br />
+              Thank you, RunSmart!
+            </div>
+          </div>
+        </div>
+        <div class="feed__item">
+          <img src="img/feed_2.png" alt="Ivan Syomochkin" class="feed__img" />
+          <div class="feed__text">
+            <div class="feed__subtitle">Ivan Syomochkin</div>
+            <div class="feed__count">1 half marathon</div>
+            <div class="feed__descr">
+              Cool thing - heart rate monitor. I usually ran without them. It
+              turns out that I only made the situation worse for myself. I
+              bought a heart rate monitor and received a workout as a gift.
+              Together they conducted my first training session and taught me
+              how to use the new gadget. They also explained the basics of
+              anatomy and made a training plan for the month ahead.
+              <br /><br />
+              I trained with them for my first half marathon! Thank you!!!
+            </div>
+          </div>
+        </div>
+        <div class="feed__item">
+          <img src="img/feed_3.png" alt="Yulia Dashkina" class="feed__img" />
+          <div class="feed__text">
+            <div class="feed__subtitle">Yulia Dashkina</div>
+            <div class="feed__count">2 half marathons</div>
+            <div class="feed__descr">
+              It took me a long time to start running because... I started a few
+              times before, but it became difficult and I quit. I heard about
+              RunSmart and heart rate monitoring from friends and decided to
+              give it a try.
+              <br /><br />
+              I called, the guys asked about my goals and found a very
+              interesting option with a discount! Now I run and enjoy running! I
+              have already completed 2 half marathons and several shorter races
+              and have no plans to stop!
+              <br /><br />
+              Thank you!!!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <!-- <div class="footer__map"></div> -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1269.4970610994264!2d30.593581169366903!3d50.47845314121228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d02536aabdcf%3A0x97e643c124a7dbd0!2z0LHRg9C7LiDQn9C10YDQvtCy0LAsIDMsINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIxMjU!5e0!3m2!1sru!2sca!4v1713960318640!5m2!1sru!2sca"
+        width="100%"
+        height="630"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="footer__info">
+        <address class="footer__addr">Blvd. Perova, 3, Kyiv, Ukraine</address>
+        <a class="footer__phone" href="tel:380930060055">380 (093) 006-00-55</a>
+        <div class="footer__social">
+          <a href="#" class="footer__social-item"
+            ><img src="icons/facebook.svg" alt="facebook"
+          /></a>
+          <a href="#" class="footer__social-item"
+            ><img src="icons/instagram.svg" alt="instagram"
+          /></a>
+          <a href="#" class="footer__social-item"
+            ><img src="icons/pinterest.svg" alt="pinterest"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="overlay">
+      <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Just fill out the application form</div>
+        <div class="modal__descr">
+          and we will call you back within 10 minutes
+        </div>
+        <form class="feed-form feed-form_mt25" action="#">
+          <input name="name" required placeholder="Your name" type="text" />
+          <input name="tel" required placeholder="Your phone" type="tel" />
+          <input name="email" required placeholder="Your E-mail" type="email" />
+          <button class="btn btn_submit">Order a consultation</button>
+        </form>
+      </div>
+
+      <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Your order:</div>
+        <div class="modal__descr">Heart rate monitor Polar FT1</div>
+        <form class="feed-form feed-form_mt25" action="#">
+          <input name="name" required placeholder="Your name" type="text" />
+          <input name="tel" required placeholder="Your phone" type="tel" />
+          <input name="email" required placeholder="Your E-mail" type="email" />
+          <button class="btn btn_submit">Buy</button>
+        </form>
+      </div>
+
+      <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Thank you for your application!</div>
+        <div class="modal__descr">Our manager will contact you soon!</div>
+      </div>
+    </div>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"

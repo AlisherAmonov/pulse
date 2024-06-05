@@ -22,4 +22,28 @@
     right: -66px;
     left: auto;
   }
+  .slick-dots {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    width: 200px;
+    margin: 0 auto;
+    line-height: 0;
+    li {
+      list-style-type: none;
+      button {
+        border-radius: 100%;
+        font-size: 0;
+        width: 10px;
+        height: 12px;
+        border: none;
+        transition: 0.5s all;
+      }
+    }
+    .slick-active {
+      button {
+        background-color: rgba(0, 0, 0, 0.76);
+      }
+    }
+  }
 }
