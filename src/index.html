@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/slick.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <section class="promo">
+    <section id="up" class="promo">
       <div class="container">
         <header class="header">
           <a href="#" class="header__logo">
@@ -66,7 +68,11 @@
         <h2 class="title">OUR ADVANTAGES</h2>
         <div class="advantages__wrapper">
           <div class="advantages__item">
-            <img src="icons/advantages/cup.png" alt="cup" />
+            <img
+              src="icons/advantages/cup.png"
+              alt="cup"
+              class="advantages__icon"
+            />
             <div class="advantages__subtitle">Share our experience</div>
             <div class="advantages__descr">
               Our employees are always ready to share their experience, because
@@ -75,7 +81,11 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="icons/advantages/heart.png" alt="heart" />
+            <img
+              src="icons/advantages/heart.png"
+              alt="heart"
+              class="advantages__icon advantages__icon_animated"
+            />
             <div class="advantages__subtitle">We care about health</div>
             <div class="advantages__descr">
               We work to ensure that playing sports benefits your health and
@@ -83,7 +93,11 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="icons/advantages/shoe.png" alt="shoe" />
+            <img
+              src="icons/advantages/shoe.png"
+              alt="shoe"
+              class="advantages__icon"
+            />
             <div class="advantages__subtitle">Let's teach you to run</div>
             <div class="advantages__descr">
               We will help you master the correct running technique! <br />
@@ -106,15 +120,10 @@
           form and we will call you back within 10 minutes.
         </div>
         <div class="consultation__wrapper">
-          <form class="feed-form" action="#">
-            <input name="name" required placeholder="Your name" type="text" />
-            <input name="tel" required placeholder="Your phone" type="tel" />
-            <input
-              name="email"
-              required
-              placeholder="Your E-mail"
-              type="email"
-            />
+          <form id="consultation-form" class="feed-form" action="#">
+            <input name="name" placeholder="Your name" type="text" />
+            <input name="phone" placeholder="Your phone" />
+            <input name="email" placeholder="Your E-mail" type="email" />
 
             <!-- <input type="submit" value="order a consultation" /> -->
             <button class="btn btn_submit">Order a consultation</button>
@@ -123,7 +132,7 @@
       </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
       <div class="container">
         <div class="carousel__inner">
           <div><img src="img/slide_1.jpg" alt="slide_1" /></div>
@@ -131,7 +140,7 @@
           <div><img src="img/slide_3.jpg" alt="slide_3" /></div>
         </div>
       </div>
-    </section>
+    </div>
     <section class="catalog">
       <div class="container">
         <h2 class="title">Catalog of heart rate monitors</h2>
@@ -159,22 +168,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -201,22 +212,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -243,22 +256,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -285,22 +300,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -327,22 +344,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -369,22 +388,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -413,22 +434,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -457,22 +480,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -499,22 +524,24 @@
                 </div>
                 <a href="#" class="catalog-item__link">MORE DETAILS</a>
               </div>
-              <ul class="catalog-item__list">
-                <li>
-                  During your workout, you will hear a beep indicating your
-                  desired heart rate;
-                </li>
-                <li>
-                  You'll see an informative graphical indicator of your target
-                  heart rate training zones;
-                </li>
-                <li>
-                  You will also see information about your calorie consumption
-                  during your workout;
-                </li>
-                <li>You can view data for 10 workouts.</li>
+              <div class="catalog-item__list">
+                <ul>
+                  <li>
+                    During your workout, you will hear a beep indicating your
+                    desired heart rate;
+                  </li>
+                  <li>
+                    You'll see an informative graphical indicator of your target
+                    heart rate training zones;
+                  </li>
+                  <li>
+                    You will also see information about your calorie consumption
+                    during your workout;
+                  </li>
+                  <li>You can view data for 10 workouts.</li>
+                </ul>
                 <a href="#" class="catalog-item__back">back</a>
-              </ul>
+              </div>
             </div>
             <hr />
             <div class="catalog-item__footer">
@@ -532,7 +559,11 @@
       <div class="container">
         <h2 class="title">Customer Reviews</h2>
 
-        <div class="feed__item">
+        <div
+          class="feed__item animate__animated animate__fadeInUp wow"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
           <img src="img/feed_1.png" alt="Irina Ivanchenko" class="feed__img" />
           <div class="feed__text">
             <div class="feed__subtitle">Irina Ivanchenko</div>
@@ -549,7 +580,11 @@
             </div>
           </div>
         </div>
-        <div class="feed__item">
+        <div
+          class="feed__item animate__animated animate__fadeInUp wow"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
           <img src="img/feed_2.png" alt="Ivan Syomochkin" class="feed__img" />
           <div class="feed__text">
             <div class="feed__subtitle">Ivan Syomochkin</div>
@@ -566,7 +601,11 @@
             </div>
           </div>
         </div>
-        <div class="feed__item">
+        <div
+          class="feed__item animate__animated animate__fadeInUp wow"
+          data-wow-duration="2s"
+          data-wow-delay="1s"
+        >
           <img src="img/feed_3.png" alt="Yulia Dashkina" class="feed__img" />
           <div class="feed__text">
             <div class="feed__subtitle">Yulia Dashkina</div>
@@ -625,7 +664,7 @@
         </div>
         <form class="feed-form feed-form_mt25" action="#">
           <input name="name" required placeholder="Your name" type="text" />
-          <input name="tel" required placeholder="Your phone" type="tel" />
+          <input name="phone" required placeholder="Your phone" />
           <input name="email" required placeholder="Your E-mail" type="email" />
           <button class="btn btn_submit">Order a consultation</button>
         </form>
@@ -637,7 +676,7 @@
         <div class="modal__descr">Heart rate monitor Polar FT1</div>
         <form class="feed-form feed-form_mt25" action="#">
           <input name="name" required placeholder="Your name" type="text" />
-          <input name="tel" required placeholder="Your phone" type="tel" />
+          <input name="phone" required placeholder="Your phone" />
           <input name="email" required placeholder="Your E-mail" type="email" />
           <button class="btn btn_submit">Buy</button>
         </form>
@@ -649,15 +688,17 @@
         <div class="modal__descr">Our manager will contact you soon!</div>
       </div>
     </div>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
+
+    <a href="#up" class="pageup"
+      ><img src="icons/circle-chevron-up-solid.svg" alt="up"
+    /></a>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
